@@ -1,23 +1,19 @@
-# Nhappmon-CNPM Lab01 Sample
-# 🛠️ Software Engineering Project – [Tên dự án]
+# 🛠️ Software Engineering Project – F&B (Nhà hàng & Cà Phê )
 
 ## 📌 Giới thiệu
 Dự án này được phát triển trong môn **Nhập môn Công nghệ Phần mềm**.  
 Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân tích yêu cầu, thiết kế, lập trình, kiểm thử và triển khai**.  
 
 ## 👥 Thành viên nhóm
-- Họ tên 1 – Vai trò (Leader, Developer, Tester, …)
-- Họ tên 2 – Vai trò
-- Họ tên 3 – Vai trò
-- Họ tên 4 – Vai trò  
+- Nguyễn Lê Vân Anh - N23DCPT003
+- Vũ Hoàng Bảo Châu - N23DCPT008 
+- Huỳnh Mai Ánh Dương - N23DCPT014
 
 ## 🎯 Use Case chính
 - Quản lý người dùng
 - Quản lý sản phẩm/dịch vụ
 - Xử lý giao dịch
 - Báo cáo & thống kê  
-
-(Sơ đồ use case có thể chèn hình ảnh vào đây)
 
 ## 📐 Thiết kế hệ thống
 - **Use Case Diagram**:
@@ -32,5 +28,3 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - Mô hình phát triển: Agile – Scrum  
 
 
-Phải nộp: final-report.md, slide PPT (nếu có), link repo GitHub.
-Rubric (10đ): tích hợp đầy đủ (4), chạy demo được (3), báo cáo & trình bày (3).
