@@ -1,0 +1,20 @@
+Hello, my name is Vu Hoang Bao Chau 
+I am currently a Multimedia Technology student at PTIT Ho Chi Minh.
+
+🔹 Interests:
+- Researching and developing UI/UX for apps and websites
+- Exploring and designing brand identity
+- Studying visual arts
+- Learning to use artificial intelligence as a tool to enhance productivity and quality in both study and work
+
+🔹 Skills:
+- Programming languages: JavaScript, SQL  
+- Tools: Notepad++, MySQL, Figma, 3dsmax, Illustrator  
+- Teamwork and project collaboration  
+
+🔹 Goals:
+- To become a professional in brand identity and multimedia design
+- To contribute to real-world projects that focus on building strong and creative branding for businesses and products
+- To keep learning about visual communication, design trends, and emerging technologies to enhance productivity, and brand value 
+
+Thank you for reading my introduction.
