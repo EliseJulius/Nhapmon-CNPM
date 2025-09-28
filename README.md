@@ -5,7 +5,7 @@ Dự án này được phát triển trong môn **Nhập môn Công nghệ Phầ
 Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân tích yêu cầu, thiết kế, lập trình, kiểm thử và triển khai**.  
 
 ## 👥 Thành viên nhóm
-- Nguyễn Lê Vân Anh - N23DCPT003
+- Nguyễn Lê Vân Anh - N23DCPT004
 - Vũ Hoàng Bảo Châu - N23DCPT008 
 - Huỳnh Mai Ánh Dương - N23DCPT014
 
