@@ -47,9 +47,8 @@ Hệ thống cho phép **người tạo nội dung (Content Creator)** và **ng�
 
 ### 💻 Clone về máy:
 ```bash
-git clone https://github.com/Lanne-0402/Nhap-mon-CNPM.git
-cd Nhap-mon-CNPM
-```
+git clone https://github.com/EliseJulius/nhapmon-CNPM.git
+cd Nhapmon-CNPM
 
 ## Triển khai demo bằng GitHub Pages
 
