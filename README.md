@@ -18,13 +18,19 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - SEO & Analytics
 - Người dùng xem & tương tác (like/comment/share).
 
-![Use Case UML](Upload/usercase.png)
 
 ---
 
 ## 📐 Thiết kế hệ thống
 - **Use Case Diagram**:
+  
+![Use Case UML](Upload/usercase.png)
+
 - **Sequence Diagram**:
+  
+![Sequence Add Diagram](Upload/sequenceadd.png)
+![Sequence View Diagram](Upload/sequenceview.png)
+
 - **ERD (Entity Relationship Diagram)**:
 
 ## 💻 Công nghệ sử dụng
