@@ -18,7 +18,7 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - SEO & Analytics
 - Người dùng xem & tương tác (like/comment/share).
 
-![Use Case UML](usercase.png)
+![Use Case UML](Upload/usercase.png)
 
 ---
 
