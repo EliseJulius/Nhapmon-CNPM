@@ -1,4 +1,4 @@
-
+<img width="544" height="612" alt="image" src="https://github.com/user-attachments/assets/d61d8a04-ea87-4788-b3c3-3c65f2235a0f" />
 # 🧾 Lab 05 – Tích hợp, Quản lý & Báo cáo
 
 ## 🎯 Mục tiêu
@@ -43,12 +43,13 @@ Hệ thống cho phép **người tạo nội dung (Content Creator)** và **ng�
 ## 5. Source Code Giao Diện Đăng Nhập (Login Form)
 
 📁 **Thư mục chứa mã nguồn**:  
-🔗 [https://hmaianhduong-ctrl.github.io/App-quanly.github.io/](https://hmaianhduong-ctrl.github.io/App-quanly.github.io/)
+🔗 [https://github.com/EliseJulius/Nhapmon-CNPM/tree/main/Lab/Lab04](https://github.com/EliseJulius/Nhapmon-CNPM/tree/main/Lab/Lab04)
 
 ### 💻 Clone về máy:
 ```bash
 git clone https://github.com/EliseJulius/nhapmon-CNPM.git
 cd Nhapmon-CNPM
+```
 
 ## Triển khai demo bằng GitHub Pages
 
