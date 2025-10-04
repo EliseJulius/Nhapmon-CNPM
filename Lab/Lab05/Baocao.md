@@ -55,7 +55,6 @@ cd Nhap-mon-CNPM
 
 GitHub Pages được sử dụng để triển khai giao diện Login Form
 Đường dẫn demo:
-Link demo: https://lanne-0402.github.io/Nhap-mon-CNPM/labs/Lab04
-
+Link demo: https://hmaianhduong-ctrl.github.io/App-quanly.github.io/
 
 
