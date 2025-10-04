@@ -34,4 +34,9 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - Quản lý phiên bản: Git + GitHub
 - Mô hình phát triển: Agile – Scrum  
 
+## 🚀 Cài đặt & chạy thử  
+Clone repo:  
+```bash
+git clone https://github.com/hmaianhduong-ctrl/Nhapmon-CNPM.git
+cd Nhapmon-CNPM
 
