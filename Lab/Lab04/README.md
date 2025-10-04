@@ -1,4 +1,4 @@
-# 🚩 Lab 03 — Kiểm thử Form Đăng nhập (Selenium IDE)
+# 🚩 Lab 04 — Kiểm thử Form Đăng nhập (Selenium IDE)
 
 # 🧩 Phân công vai trò nhóm
 
