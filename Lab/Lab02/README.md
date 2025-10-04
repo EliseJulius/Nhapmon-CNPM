@@ -1,113 +1,163 @@
 # LAB02 – Phân tích yêu cầu & Thiết kế Use Case  
-## Đề tài: F&B – Web App Truyền thông đa phương tiện  
+## Đề tài: F&B – Mini Project Quản lý Nội dung
 
 ---
 
 ## 🎯 Mục tiêu  
-- Phát triển **Web App truyền thông đa phương tiện** cho doanh nghiệp F&B.  
-- Quản trị **nội dung số & xuất bản đa kênh** (Web/Facebook/Zalo/TikTok/YouTube).  
-- Hỗ trợ **livestream/clip ngắn, PWA offline, push notification**.  
-- Tích hợp **SEO/Analytics**.  
-- Áp dụng **SDLC (Waterfall/Agile-Scrum)**.  
+- Phát triển **Web App quản lý nội dung số** cho quán cafe: bài viết, poster, clip ngắn.  
+- **Demo 2 chức năng chính**:  
+  1. Thêm nội dung mới (Add Content)  
+  2. Xem danh sách nội dung (View Content)  
+- Có login form, cơ sở dữ liệu nhỏ, báo cáo GitHub, UML diagram, test cơ bản.  
 
 ---
 
-## 1. Thiết kế Mini Project: Hệ thống quản lý & xuất bản nội dung F&B  
+## 1. Thiết kế Mini Project  
 
-### 1.1 Entity (6 bảng dữ liệu chính)  
-- **User** (Người dùng/Quản trị viên/Khách hàng)  
-- **Content** (Bài viết/Video/Poster/Clip ngắn)  
-- **Channel** (Kênh xuất bản: Web, FB, Zalo, TikTok, YouTube)  
-- **Workflow** (Quy trình duyệt nội dung: Draft → Review → Approved → Published)  
-- **Schedule** (Lịch xuất bản 90 ngày)  
-- **Analytics** (Thống kê/SEO/Hiệu quả kênh)  
+### 1.1 Entity (bảng dữ liệu chính)  
+- **User** – Người dùng / Quản trị viên  
+- **Content** – Bài viết / Poster / Clip  
+- **Channel** – Kênh xuất bản (Web, FB, TikTok…)  
+- **Workflow** – Quy trình duyệt nội dung (Draft → Review → Approved → Published)  
+- **Schedule** – Lịch xuất bản nội dung  
+- **Analytics** – Thống kê/Hiệu quả kênh  
 
-**Mối quan hệ:**  
-- User 1–N Content (người tạo nội dung).  
-- Content N–N Channel (xuất bản đa kênh).  
-- Content 1–N Workflow (duyệt nhiều bước).  
-- Schedule 1–N Content (kế hoạch nội dung).  
-- Content 1–N Analytics (theo dõi dữ liệu).  
+**Mối quan hệ chính:**  
+- User 1–N Content (người tạo nội dung)  
+- Content N–N Channel (xuất bản đa kênh)  
+- Content 1–N Workflow (nhiều bước duyệt)  
+- Schedule 1–N Content (kế hoạch xuất bản)  
+- Content 1–N Analytics (theo dõi hiệu quả)  
 
 ---
 
 ### 1.2 Use Case UML  
 
 **Tác nhân chính:**  
-- **Content Creator** (người tạo nội dung).  
-- **Manager/Editor** (người duyệt, quản lý, xuất bản).  
-- **Channel API** (FB API, TikTok API, YouTube API, v.v.).  
-- **User/Customer** (người xem & tương tác).  
+- **Content Creator** – Người tạo nội dung  
+- **Manager/Editor** – Người duyệt, quản lý nội dung  
+- **Channel API** – API kênh xuất bản (FB/TikTok/Web)  
+- **User/Customer** – Người xem và tương tác  
 
-**Use Case chính:**  
-- **Auth**: Đăng ký, Đăng nhập.  
-- Soạn nội dung (text, poster, video, clip).  
-- Lên lịch đăng nội dung (90 ngày).  
-- Quản lý lịch nội dung.  
-- Quản lý poster/thumbnail.  
-- Quản lý kênh (Channel Management).  
-- Workflow duyệt nội dung (Draft → Review → Approved → Published).  
-- Xuất bản đa kênh (Web/FB/Zalo/TikTok/YouTube).  
-- Livestream & Clip ngắn.  
-- SEO & Analytics.  
-- Push notification.  
-- Xem nội dung, Like, Comment, Share (User/Customer).  
+**Use Case chính (cho demo mini project):**  
+- Thêm nội dung mới (Add Content)  
+- Xem danh sách nội dung (View Content)  
+
+💡 *Tính năng mở rộng (Livestream/Clip ngắn, PWA Offline, SEO/Analytics) không bắt buộc cho mini project, được trình bày ở Sequence UML & Backlog.*  
+
+---
+
+#### Use Case Description  
+
+**Use Case 1: Thêm nội dung mới (Add Content)**  
+- **Use Case ID:** UC001  
+- **Actor chính:** Content Creator  
+- **Mục tiêu:** Cho phép Content Creator thêm bài viết, poster, clip vào hệ thống để quản lý và xuất bản.  
+
+**Tiền điều kiện (Pre-condition):**  
+- Content Creator đã đăng nhập thành công vào hệ thống.  
+- Có quyền tạo nội dung mới.  
+
+**Hậu điều kiện (Post-condition):**  
+- Nội dung mới được lưu vào cơ sở dữ liệu.  
+- Trạng thái ban đầu của nội dung: Draft.  
+- Nếu bật workflow, nội dung được gửi tới Manager/Editor để review.  
+
+**Luồng sự kiện chính (Main Flow):**  
+1. Content Creator chọn “Thêm nội dung mới”.  
+2. Hệ thống hiển thị form nhập dữ liệu (Title, Type, Body/MediaURL, Description).  
+3. Content Creator điền thông tin và nhấn Submit.  
+4. Hệ thống kiểm tra dữ liệu hợp lệ.  
+5. Hệ thống lưu dữ liệu vào bảng Content với trạng thái Draft.  
+6. Hệ thống hiển thị thông báo “Thêm nội dung thành công”.  
+
+**Luồng thay thế (Alternate Flow):**  
+- Nếu dữ liệu không hợp lệ → hệ thống hiển thị lỗi, yêu cầu sửa → quay lại bước 3.  
+
+**Business Rules / Notes:**  
+- Tiêu đề phải duy nhất trong hệ thống.  
+- Media URL phải hợp lệ (nếu là clip/video).  
+
+---
+
+**Use Case 2: Xem danh sách nội dung (View Content)**  
+- **Use Case ID:** UC002  
+- **Actor chính:** Content Creator / Manager / User  
+- **Mục tiêu:** Cho phép các actor xem danh sách nội dung đã tạo hoặc đã xuất bản.  
+
+**Tiền điều kiện (Pre-condition):**  
+- Actor đã đăng nhập vào hệ thống.  
+- Có quyền truy cập danh sách nội dung:  
+  - Content Creator: nội dung của mình.  
+  - Manager: tất cả nội dung.  
+  - User: chỉ nội dung đã Published.  
+
+**Hậu điều kiện (Post-condition):**  
+- Danh sách nội dung được hiển thị đầy đủ, có thể click xem chi tiết.  
+
+**Luồng sự kiện chính (Main Flow):**  
+1. Actor chọn “Xem danh sách nội dung”.  
+2. Hệ thống truy vấn cơ sở dữ liệu dựa trên quyền truy cập.  
+3. Hệ thống hiển thị bảng danh sách nội dung (ID, Title, Type, Status, CreatedDate).  
+4. Actor có thể click vào nội dung để xem chi tiết (không bắt buộc cho demo).  
+
+**Luồng thay thế (Alternate Flow):**  
+- Nếu không có dữ liệu → hiển thị thông báo “Chưa có nội dung nào”.  
+
+**Business Rules / Notes:**  
+- Content Creator chỉ xem được nội dung mình tạo.  
+- Manager/Editor có thể xem tất cả nội dung.  
+- User/Customer chỉ xem nội dung đã Published.  
 
 ---
 
 ### 1.3 Sequence UML  
 
-**a) Luồng Xuất bản đa kênh**  
-1. Creator tạo nội dung → gửi duyệt.  
-2. Editor review → phê duyệt.  
-3. Hệ thống gọi API → đăng lên các kênh.  
-4. Ghi log + Analytics → cập nhật dashboard.  
+**a) Luồng Thêm nội dung (Add Content)**  
+1. Content Creator nhập dữ liệu nội dung → nhấn Submit  
+2. Hệ thống xác thực login → ghi vào database Content  
+3. Hệ thống thông báo thành công  
 
-**b) Luồng Livestream/Clip ngắn**  
-1. Creator tạo sự kiện livestream.  
-2. Hệ thống kết nối API YouTube/TikTok.  
-3. Livestream diễn ra → gửi push notification cho User.  
-4. Sau khi kết thúc → clip ngắn được lưu & xuất bản lại.  
+**b) Luồng Xem danh sách nội dung (View Content)**  
+1. Content Creator/Manager đăng nhập  
+2. Gửi request danh sách nội dung → Hệ thống truy vấn DB  
+3. Hệ thống trả về dữ liệu và hiển thị bảng danh sách  
 
 ---
 
 ### 1.4 Thiết kế cơ sở dữ liệu (ERD)  
 
-- **User(UserID, Name, Email, Role, PasswordHash)**  
-- **Content(ContentID, Title, Body, MediaURL, Type, Status, CreatedBy, CreatedAt)**  
-- **Channel(ChannelID, Name, Type, APIKey)**  
-- **Workflow(WorkflowID, ContentID, Step, ApproverID, Status, Date)**  
-- **Schedule(ScheduleID, ContentID, ChannelID, PublishDate, Status)**  
-- **Analytics(AnalyticsID, ContentID, Views, Likes, Shares, SEOScore, Date)**  
+| Bảng      | Thuộc tính |
+|-----------|------------|
+| **User** | UserID, Name, Email, Role, PasswordHash |
+| **Content** | ContentID, Title, Body, MediaURL, Type, Status, CreatedBy, CreatedAt |
+| **Channel** | ChannelID, Name, Type, APIKey |
+| **Workflow** | WorkflowID, ContentID, Step, ApproverID, Status, Date |
+| **Schedule** | ScheduleID, ContentID, ChannelID, PublishDate, Status |
+| **Analytics** | AnalyticsID, ContentID, Views, Likes, Shares, SEOScore, Date |
+
+💡 *Mini Project chỉ cần dùng **User** và **Content** để demo 2 chức năng, các bảng còn lại là mở rộng.*  
 
 ---
 
 ## 2. Triển khai chi tiết trên Jira (Agile Scrum)  
 
-### Product Backlog (ví dụ)  
-- Auth (Đăng ký/Đăng nhập).  
-- CRUD Content (bài viết, poster, video, clip).  
-- Workflow duyệt nội dung.  
-- Lập lịch 90 ngày.  
-- Quản lý kênh (Channel Management).  
-- Xuất bản đa kênh (FB API, TikTok API, Web).  
-- Livestream & Clip ngắn.  
-- SEO/Analytics Dashboard.  
-- PWA offline + Push notification.  
+### Product Backlog (rút gọn)  
+- Auth (Đăng nhập/Logout)  
+- CRUD Content (Add Content, View Content)  
+- Workflow duyệt nội dung (mở rộng)  
+- Quản lý kênh (mở rộng)  
+- Xuất bản đa kênh (mở rộng)  
 
-### Sprint Plan (ví dụ)  
-- **Sprint 1**: Auth, CRUD Content.  
-- **Sprint 2**: Workflow + Schedule.  
-- **Sprint 3**: Quản lý kênh + Xuất bản đa kênh.  
-- **Sprint 4**: Livestream/Clip ngắn + SEO/Analytics + Release.  
+### Sprint Plan (rút gọn)  
+- **Sprint 1**: Auth + Add Content + View Content → Demo chạy được  
 
 ### Board  
 To Do → In Progress → Code Review → Testing → Done  
 
 ---
 
-## 3. Đồng bộ GitHub  
-- Repo riêng cho mỗi thành viên (public).  
-- Upload artefact: Use Case Diagram, Sequence Diagram, ERD, README.md.  
-- Jira ↔ GitHub (Smart Commit).  
-- Ví dụ commit:  
+## ✅ Ghi chú  
+- Mini Project tập trung **Add Content + View Content**, phù hợp demo lab giữa kỳ.  
+- Các tính năng khác (Livestream, SEO, Analytics, PWA Offline) là mở rộng, chỉ làm sơ đồ UML & Backlog.  
+- Tất cả code, database, UML diagram sẽ push lên GitHub repo cho Lab 01, Lab 05.  
