@@ -37,7 +37,7 @@ Hệ thống cho phép **người tạo nội dung (Content Creator)** và **ng�
 ## 5. Source Code Giao Diện Đăng Nhập (Login Form)
 
 📁 **Thư mục chứa mã nguồn**:  
-🔗 [https://github.com/Lanne-0402/Nhap-mon-CNPM/tree/main/Lab04](https://github.com/Lanne-0402/Nhap-mon-CNPM/tree/main/labs/Lab04)
+🔗 [https://hmaianhduong-ctrl.github.io/App-quanly.github.io/](https://hmaianhduong-ctrl.github.io/App-quanly.github.io/)
 
 ### 💻 Clone về máy:
 ```bash
