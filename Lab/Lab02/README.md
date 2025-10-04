@@ -76,6 +76,11 @@
 - Tiêu đề phải duy nhất trong hệ thống.  
 - Media URL phải hợp lệ (nếu là clip/video).  
 
+**Giải thích:**  
+- Actor **Content Creator** tương tác với **Web App**.  
+- **Content DB** lưu nội dung mới.  
+- **Manager/Editor** được thông báo nếu workflow duyệt nội dung bật.  
+
 ---
 
 **Use Case 2: Xem danh sách nội dung (View Content)**  
@@ -107,19 +112,20 @@
 - Manager/Editor có thể xem tất cả nội dung.  
 - User/Customer chỉ xem nội dung đã Published.  
 
+**Giải thích:**  
+- Actor có thể là **Content Creator**, **Manager/Editor** hoặc **User/Customer**.  
+- **Web App** truy vấn **Content DB** dựa trên quyền.  
+- Nếu không có dữ liệu, hệ thống hiển thị thông báo “Chưa có nội dung nào”.  
+
 ---
 
 ### 1.3 Sequence UML  
 
 **a) Luồng Thêm nội dung (Add Content)**  
-1. Content Creator nhập dữ liệu nội dung → nhấn Submit  
-2. Hệ thống xác thực login → ghi vào database Content  
-3. Hệ thống thông báo thành công  
+![Sequence Add Content](sequenceadd.png)  
 
 **b) Luồng Xem danh sách nội dung (View Content)**  
-1. Content Creator/Manager đăng nhập  
-2. Gửi request danh sách nội dung → Hệ thống truy vấn DB  
-3. Hệ thống trả về dữ liệu và hiển thị bảng danh sách  
+![Sequence View Content](sequenceview.png)  
 
 ---
 
@@ -152,4 +158,3 @@
 
 ### Board  
 To Do → In Progress → Code Review → Testing → Done  
-
