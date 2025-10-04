@@ -40,6 +40,6 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - Push notification
 - Xem nội dung, Like, Comment, Share (User/Customer)
 
-<img src="images/usercase.png" alt="Use Case UML" width="600">
+![Use Case UML](usercase.png)
 
 ---
