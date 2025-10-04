@@ -34,6 +34,12 @@ Hệ thống cho phép **người tạo nội dung (Content Creator)** và **ng�
 ### Sơ đồ user case
 ![Use Case](../Lab02/usercase.png)
 
+### Sơ đồ sequence Add contetnt
+![Use Case](../Lab02/seqadd.png)
+
+### Sơ đồ sequence View contetnt
+![Use Case](../Lab02/seqview.png)
+
 ## 5. Source Code Giao Diện Đăng Nhập (Login Form)
 
 📁 **Thư mục chứa mã nguồn**:  
