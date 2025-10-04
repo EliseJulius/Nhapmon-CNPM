@@ -1,4 +1,3 @@
-<img width="544" height="612" alt="image" src="https://github.com/user-attachments/assets/d61d8a04-ea87-4788-b3c3-3c65f2235a0f" />
 # 🧾 Lab 05 – Tích hợp, Quản lý & Báo cáo
 
 ## 🎯 Mục tiêu
