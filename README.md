@@ -57,6 +57,6 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 ## 🚀 Cài đặt & chạy thử  
 Clone repo:  
 ```bash
-git clone https://github.com/hmaianhduong-ctrl/Nhapmon-CNPM.git
+git clone https://github.com/EliseJulius/nhapmon-CNPM.git
 cd Nhapmon-CNPM
 
