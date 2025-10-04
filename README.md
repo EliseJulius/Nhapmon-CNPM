@@ -13,7 +13,20 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - Quản lý người dùng
 - Quản lý sản phẩm/dịch vụ
 - Xử lý giao dịch
-- Báo cáo & thống kê  
+- Báo cáo & thống kê
+
+  ## 🎯 Use Case chính  
+- Soạn nội dung (text, poster, video, clip)
+- Quản lý nội dung (lịch, poster, kênh)
+- Duyệt nội dung
+- Xuất bản đa kênh
+- Gửi thông báo đẩy
+- SEO & Analytics
+- Người dùng xem & tương tác (like/comment/share).
+
+![Use Case UML](usercase.png)
+
+---
 
 ## 📐 Thiết kế hệ thống
 - **Use Case Diagram**:
@@ -27,19 +40,4 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - Quản lý phiên bản: Git + GitHub
 - Mô hình phát triển: Agile – Scrum  
 
-## 🎯 Use Case chính  
-- Soạn nội dung (text, poster, video, clip)
-- Lên lịch đăng nội dung (90 ngày)
-- Quản lý lịch nội dung
-- Quản lý poster/thumbnail
-- Quản lý kênh (Channel Management)
-- Workflow duyệt nội dung (Draft → Review → Approved → Published)
-- Xuất bản đa kênh (Web/FB/Zalo/TikTok/YouTube)
-- Livestream & Clip ngắn
-- SEO & Analytics
-- Push notification
-- Xem nội dung, Like, Comment, Share (User/Customer)
 
-![Use Case UML](usercase.png)
-
----
