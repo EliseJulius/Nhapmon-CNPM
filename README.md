@@ -44,7 +44,7 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 ## 📐 Thiết kế hệ thống
 - **Use Case Diagram**:
   
-![Use Case UML](Upload/usercase.png)
+![Use Case UML](Lab/Lab02/usercase.png)
 
 
 ## 💻 Công nghệ sử dụng
