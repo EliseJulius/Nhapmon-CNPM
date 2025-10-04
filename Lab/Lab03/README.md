@@ -3,16 +3,18 @@
 # 🧩 Phân công vai trò nhóm
 
 **Môn:** Nhập Môn Công Nghệ Phần Mềm  
-**Nhóm:** F&B Mini Project – Quản lý & Xuất bản nội dung
+**Đề tài:** F&B Mini Project – Quản lý & Xuất bản nội dung
 
 ---
 
 ## 👥 Thành viên nhóm
-Nguyễn Lê Vân Anh — N23DCPT004 
-Vũ Hoàng Bảo Châu — N23DCPT008 
-Huỳnh Mai Ánh Dương — N23DCPT014
 
+- **Nguyễn Lê Vân Anh** — *N23DCPT004*  
+- **Vũ Hoàng Bảo Châu** — *N23DCPT008*  
+- **Huỳnh Mai Ánh Dương** — *N23DCPT014*
+  
 ---
+
 
 ## 📘 Ghi chú
 
