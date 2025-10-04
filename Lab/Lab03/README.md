@@ -26,6 +26,9 @@ Trang `login.html` bao gồm:
 * Link **SIGN UP**
 * Ba nút social: **Facebook, Twitter, Google**
 
+
+![Login Screenshot](./login.png)
+
 ---
 
 ## Test cases (tóm tắt)
