@@ -97,6 +97,7 @@ Nhóm đã thực hành teamwork, sử dụng GitHub hiệu quả, và triển k
 
 ---
 
+```bash
 git add docs/Lab05_Report.md
 git commit -m "Add Lab05 final report"
 git push origin main
