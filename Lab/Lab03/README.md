@@ -1,11 +1,28 @@
 # 🚩 Lab 03 — Kiểm thử Form Đăng nhập (Selenium IDE)
 
-**Môn:** Nhập Môn Công Nghệ Phần Mềm
-**Nhóm:**
+# 🧩 Phân công vai trò nhóm
 
-* Nguyễn Lê Vân Anh — N23DCPT004
-* Vũ Hoàng Bảo Châu — N23DCPT008
-* Huỳnh Mai Ánh Dương — N23DCPT014
+**Môn:** Nhập Môn Công Nghệ Phần Mềm  
+**Nhóm:** F&B Mini Project – Quản lý & Xuất bản nội dung
+
+---
+
+## 👥 Thành viên nhóm
+
+| STT | Họ tên | Mã sinh viên | Vai trò | Nhiệm vụ chính | Liên quan Lab |
+|-----|---------|---------------|----------|-----------------|----------------|
+| 1 | **Nguyễn Lê Vân Anh** | N23DCPT004 | 🧠 **Business Analyst (BA)** | - Phân tích yêu cầu hệ thống F&B Mini Project<br>- Xác định actor, chức năng chính<br>- Vẽ **Use Case Diagram (.puml/.png)**<br>- Viết **Use Case Description** cho 2 chức năng chính: *Add Content*, *View Content* | **Lab 02** |
+| 2 | **Vũ Hoàng Bảo Châu** | N23DCPT008 | ⚙️ **System Designer (SD)** | - Chuyển đổi Use Case thành **Sequence Diagram** (Add Content & View Content)<br>- Mô tả các đối tượng và thông điệp trao đổi giữa actor – hệ thống – DB<br>- Viết mô tả chi tiết luồng tương tác | **Lab 03** |
+| 3 | **Huỳnh Mai Ánh Dương** | N23DCPT014 | 💻 **Front-End Developer (FE)** | - Thiết kế **Form Login (HTML, CSS, JavaScript)**<br>- Thực hiện kiểm tra dữ liệu nhập (validation)<br>- Upload code & UML lên GitHub<br>- Cấu hình **GitHub Pages** để chạy demo | **Lab 04** |
+| 🌐 | **Cả nhóm** | — | 📑 **Integration & Reporting** | - Gom toàn bộ artifacts (Use Case, Sequence, Form Login) vào 1 repository<br>- Tạo file **`project-report.md`** mô tả quy trình, công cụ, và kết quả<br>- Tạo **tag version v1.0** và nộp link repo | **Lab 05** |
+
+---
+
+## 📘 Ghi chú
+
+Dự án mini được thực hiện theo quy trình SDLC (Waterfall – Simplified), gồm 3 thành viên với vai trò phân tách rõ ràng từ **phân tích**, **thiết kế** đến **lập trình và báo cáo tích hợp**.  
+Tất cả các tệp UML, mã nguồn và tài liệu báo cáo được lưu trữ và quản lý trong cùng một repository GitHub để đảm bảo tính thống nhất và dễ dàng đánh giá.
+
 
 ---
 
