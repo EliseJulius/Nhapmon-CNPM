@@ -32,7 +32,7 @@ Hệ thống cho phép **người tạo nội dung (Content Creator)** và **ng�
 
 
 ### Sơ đồ user case
-![Use Case UML](Lab/usercase.png)
+![Use Case](../Lab02/usercase.png)
 
 ## 5. Source Code Giao Diện Đăng Nhập (Login Form)
 
