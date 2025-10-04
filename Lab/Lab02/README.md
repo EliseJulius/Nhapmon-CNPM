@@ -43,8 +43,6 @@
 - Thêm nội dung mới (Add Content)  
 - Xem danh sách nội dung (View Content)  
 
-💡 *Tính năng mở rộng (Livestream/Clip ngắn, PWA Offline, SEO/Analytics) không bắt buộc cho mini project, được trình bày ở Sequence UML & Backlog.*  
-
 ---
 
 #### Use Case Description  
@@ -155,9 +153,3 @@
 ### Board  
 To Do → In Progress → Code Review → Testing → Done  
 
----
-
-## ✅ Ghi chú  
-- Mini Project tập trung **Add Content + View Content**, phù hợp demo lab giữa kỳ.  
-- Các tính năng khác (Livestream, SEO, Analytics, PWA Offline) là mở rộng, chỉ làm sơ đồ UML & Backlog.  
-- Tất cả code, database, UML diagram sẽ push lên GitHub repo cho Lab 01, Lab 05.  
