@@ -8,7 +8,7 @@ Sinh viên thực hành tổng hợp các artifacts (Use Case, Sequence, Form Lo
 ---
 
 ## 💡 Đề tài mini project
-**Web App Truyền thông đa phương tiện cho doanh nghiệp F&B**  
+**Web App Truyền thông đa phương tiện cho quán cà phê** 
 Hệ thống cho phép **người tạo nội dung (Content Creator)** và **người quản lý (Manager)** quản lý, duyệt và xuất bản nội dung truyền thông đa kênh (Web, Facebook, TikTok, YouTube…).
 
 ### 🎯 Mục tiêu demo
