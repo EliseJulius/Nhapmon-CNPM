@@ -9,13 +9,7 @@ Mục tiêu là áp dụng quy trình phát triển phần mềm, từ **phân t
 - Vũ Hoàng Bảo Châu - N23DCPT008 
 - Huỳnh Mai Ánh Dương - N23DCPT014
 
-## 🎯 Use Case chính
-- Quản lý người dùng
-- Quản lý sản phẩm/dịch vụ
-- Xử lý giao dịch
-- Báo cáo & thống kê
-
-  ## 🎯 Use Case chính  
+## 🎯 Use Case chính  
 - Soạn nội dung (text, poster, video, clip)
 - Quản lý nội dung (lịch, poster, kênh)
 - Duyệt nội dung
