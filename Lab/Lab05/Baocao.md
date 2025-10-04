@@ -79,8 +79,7 @@ Hệ thống cho phép **người tạo nội dung (Content Creator)** và **ng�
 ### Cách 2: Kích hoạt GitHub Pages
 1. Vào **Settings → Pages**  
 2. Chọn **Branch: main / folder: root** → **Save**  
-3. Link demo sẽ có dạng:  
-https://<username>.github.io/fnb-media-app/login.html
+3. Link demo sẽ có dạng:  (https://hmaianhduong-ctrl.github.io/App-quanly.github.io/)
 
 ---
 
