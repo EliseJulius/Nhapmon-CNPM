@@ -31,6 +31,7 @@ Hệ thống cho phép **người tạo nội dung (Content Creator)** và **ng�
 | **Lab 05** | Báo cáo, gom artifacts, tạo version tag `v1.0` | `Lab05_Report.md` (file này) |
 
 
+### Sơ đồ user case
 
 
 ## 5. Source Code Giao Diện Đăng Nhập (Login Form)
