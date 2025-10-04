@@ -122,10 +122,10 @@
 ### 1.3 Sequence UML  
 
 **a) Luồng Thêm nội dung (Add Content)**  
-![Sequence Add Content](sequenceadd.png)  
+![Sequence Add Content](./Upload/sequenceadd.png)
 
 **b) Luồng Xem danh sách nội dung (View Content)**  
-![Sequence View Content](sequenceview.png)  
+![Sequence View Content](./Upload/sequenceview.png)  
 
 ---
 
