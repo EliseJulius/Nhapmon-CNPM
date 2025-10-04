@@ -78,6 +78,7 @@ Trang `login.html` bao gồm:
 * Sau khi chạy xong, chụp màn hình kết quả (Win: `Win+Shift+S`, macOS: `Cmd+Shift+4`).
 * Lưu ảnh vào `tests/results/` rồi commit vào repo.
 
+![Login Screenshot](./logintest.png)
 ---
 
 ## Locators (gợi ý, ưu tiên ID > CSS)
