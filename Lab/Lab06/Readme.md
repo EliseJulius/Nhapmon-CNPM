@@ -94,21 +94,29 @@
 
 # 🔵 Mối quan hệ chính
   1. Kế thừa (Generalization):
-    User → ContentCreator, Reviewer, Admin.
+    - User → ContentCreator, Reviewer, Admin.
   → Mỗi loại người dùng sẽ có quyền khác nhau: tạo nội dung, duyệt nội dung, hay quản lý toàn hệ thống.
   2. Kết hợp (Association / Composition):
-    User ↔ Content (1 → 0..*):
-    → Người dùng có thể tạo nhiều nội dung.
-    Content ↔ Workflow (1 → 0..*):
-    → Mỗi nội dung có thể trải qua nhiều bước duyệt, phê duyệt hoặc bị từ chối.
-    Content ↔ Schedule (1 → 0..*):
-    → Mỗi nội dung có thể được lên nhiều lịch đăng khác nhau trên các kênh.
-    Schedule ↔ Channel (0..* → 1):
-    Một kênh có thể chứa nhiều bài đăng đã được lên lịch.
-    Content ↔ Analytics (1 → 0..*):
-    → Mỗi nội dung có thể có nhiều bản ghi phân tích hiệu quả (lượt xem, chia sẻ, điểm SEO).
+     
+      - User ↔ Content (1 → 0..*):
+            Người dùng có thể tạo nhiều nội dung.
+           
+      - Content ↔ Workflow (1 → 0..*):
+            Mỗi nội dung có thể trải qua nhiều bước duyệt, phê duyệt hoặc bị từ chối.
+           
+      - Content ↔ Schedule (1 → 0..*):
+            Mỗi nội dung có thể được lên nhiều lịch đăng khác nhau trên các kênh
+           
+      - Schedule ↔ Channel (0..* → 1):
+            Một kênh có thể chứa nhiều bài đăng đã được lên lịch.
+            
+      - Content ↔ Analytics (1 → 0..*):
+            Mỗi nội dung có thể có nhiều bản ghi phân tích hiệu quả (lượt xem, chia sẻ, điểm SEO)
+      
   3. Tương tác nghiệp vụ:
-    Người dùng (User) tạo nội dung (Content) mới  →  Nội dung được kiểm tra hợp lệ (validate()) → gửi duyệt (submitForReview())  → Bộ phận duyệt (Workflow) nhận nội dung → phê duyệt (approve()) hoặc từ chối (reject()).
-    Khi được duyệt, nội dung sẽ được lên lịch đăng (Schedule) trên các kênh (Channel)  → Sau khi đăng, hệ thống thu thập dữ liệu hiệu suất (Analytics) để đánh giá mức độ tương tác  →  Quản trị viên (Admin) có thể giám sát toàn bộ chu trình, chỉnh sửa hoặc gỡ nội dung khi cần.
+     
+      - Người dùng (User) tạo nội dung (Content) mới  →  Nội dung được kiểm tra hợp lệ (validate()) → gửi duyệt (submitForReview())  → Bộ phận duyệt (Workflow) nhận nội dung → phê duyệt (approve()) hoặc từ chối (reject()).
+      - Khi được duyệt, nội dung sẽ được lên lịch đăng (Schedule) trên các kênh (Channel)  → Sau khi đăng, hệ thống thu thập dữ liệu hiệu suất (Analytics) để đánh giá mức độ tương tác  →  Quản trị viên (Admin) có thể giám sát toàn bộ chu trình, chỉnh sửa hoặc gỡ nội dung khi cần.
+        
   4. Chuỗi nghiệp vụ tổng quát:
-    User → tạo Content → gửi Workflow duyệt → qua Schedule để đăng lên Channel → kết quả được lưu trong Analytics.
+    - User → tạo Content → gửi Workflow duyệt → qua Schedule để đăng lên Channel → kết quả được lưu trong Analytics.
