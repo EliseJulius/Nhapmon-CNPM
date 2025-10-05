@@ -1,0 +1,44 @@
+@startuml
+' PACKAGE DIAGRAM - F&B Content Management System
+
+package "UI" {
+  class LoginPage
+  class AddContentPage
+  class ContentListPage
+}
+
+package "Controller" {
+  class AuthController
+  class ContentController
+}
+
+package "Service" {
+  class AuthService
+  class ContentService
+}
+
+package "Repository" {
+  class UserRepository
+  class ContentRepository
+}
+
+package "Model" {
+  class User
+  class Content
+}
+
+' Relationships
+UI --> Controller
+Controller --> Service
+Service --> Repository
+Repository --> Model
+
+note bottom
+UI: giao diện người dùng (form, list)
+Controller: xử lý yêu cầu
+Service: nghiệp vụ logic
+Repository: truy cập dữ liệu
+Model: định nghĩa cấu trúc dữ liệu
+end note
+
+@enduml
