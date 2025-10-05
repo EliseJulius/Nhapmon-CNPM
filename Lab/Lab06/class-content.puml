@@ -1,4 +1,4 @@
-@startuml
+@startuml diagram
 ' =========================
 ' CLASS DIAGRAM - F&B CONTENT MANAGEMENT
 ' =========================
@@ -75,5 +75,3 @@ User "1" -- "0..*" Content : creates >
 Content "0..*" -- "0..*" Channel : published_on >Content "1" -- "0..*" Workflow : has >
 Content "1" -- "0..*" Schedule : scheduled_in >
 Content "1" -- "0..*" Analytics : tracked_by >
-
-@enduml
