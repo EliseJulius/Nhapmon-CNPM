@@ -119,17 +119,7 @@
 
 ---
 
-### 1.3 Sequence UML  
-
-**a) Luồng Thêm nội dung (Add Content)**  
-![Sequence Add Content](seqadd.png)
-
-**b) Luồng Xem danh sách nội dung (View Content)**  
-![Sequence View Content](seqview.png)  
-
----
-
-### 1.4 Thiết kế cơ sở dữ liệu (ERD)  
+### 1.3 Thiết kế cơ sở dữ liệu (ERD)  
 
 | Bảng      | Thuộc tính |
 |-----------|------------|
