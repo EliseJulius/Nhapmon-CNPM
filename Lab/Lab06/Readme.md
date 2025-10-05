@@ -94,7 +94,6 @@
 
 # 🔵 Mối quan hệ chính
   1. Kế thừa (Generalization):
-    Hệ thống hiện chưa có kế thừa rõ ràng, tuy nhiên lớp User có thể mở rộng trong tương lai:
     User → ContentCreator, Reviewer, Admin.
   → Mỗi loại người dùng sẽ có quyền khác nhau: tạo nội dung, duyệt nội dung, hay quản lý toàn hệ thống.
   2. Kết hợp (Association / Composition):
