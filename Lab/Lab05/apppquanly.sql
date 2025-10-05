@@ -59,3 +59,17 @@ CREATE TABLE Workflow (
     FOREIGN KEY (ContentID) REFERENCES Content(ContentID),
     FOREIGN KEY (ApproverID) REFERENCES Users(UserID)
 );
+
+-- Người dùng mẫu
+INSERT INTO Users (Name, Email, Role, PasswordHash)
+VALUES
+('Nguyễn Lê Vân Anh', 'nguyenleva@gmaile.com', 'Admin', '123456hash'),
+('Vũ Hoàng Bảo Châu', 'vuhaongbc@gmail.com', 'Editor', 'abcdefhash'),
+('Huỳnh Mai Ánh Dương', 'hmad@gmai.com', 'Content Creator', 'xyz789hash');
+
+-- Kênh mẫu
+INSERT INTO Channels (Name, Type, APIKey)
+VALUES
+('Facebook Page', 'Social', 'FB-KEY-123'),
+('Instagram', 'Social', 'IG-KEY-456'),
+('YouTube', 'Video', 'YT-KEY-789');
