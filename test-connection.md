@@ -1,3 +1,3 @@
 git add .
 git commit -m "SCRUM-3: Test Jira integration"
-git push origin main
+cat ~/.ssh/id_ed25519.pub

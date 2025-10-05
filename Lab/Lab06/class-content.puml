@@ -1,0 +1,79 @@
+@startuml
+' =========================
+' CLASS DIAGRAM - F&B CONTENT MANAGEMENT
+' =========================
+
+class User {
+  +userId : int
+  +name : String
+  +email : String
+  +role : String
+  +passwordHash : String
+  +login(email: String, password: String) : boolean
+  +logout() : void
+  +createContent(content: Content) : void
+  +viewContentList() : List<Content>
+}
+
+class Content {
+  +contentId : int
+  +title : String
+  +body : String
+  +mediaURL : String
+  +type : String
+  +status : String
+  +createdBy : int
+  +createdAt : DateTime
+  +validate() : boolean
+  +submitForReview() : void
+}
+
+class Channel {
+  +channelId : int
+  +name : String
+  +type : String
+  +apiKey : String
+  +publishContent(content: Content) : boolean
+}
+
+class Workflow {
+  +workflowId : int
+  +contentId : int
+  +step : String
+  +approverId : int
+  +status : String
+  +date : DateTime
+  +approve() : void
+  +reject() : void
+}
+
+class Schedule {
+  +scheduleId : int
+  +contentId : int
+  +channelId : int
+  +publishDate : DateTime
+  +status : String
+  +schedulePublish() : void
+}
+
+class Analytics {
+  +analyticsId : int
+  +contentId : int
+  +views : int
+  +likes : int
+  +shares : int
+  +seoScore : float
+  +date : DateTime
+  +calculateScore() : float
+}
+
+' ========================
+' RELATIONSHIPS
+' =========================
+
+User "1" -- "0..*" Content : creates >
+Content "0..*" -- "0..*" Channel : published_on >Content "1" -- "0..*" Workflow : has >
+Content "1" -- "0..*" Schedule : scheduled_in >
+Content "1" -- "0..*" Analytics : tracked_by >
+
+@enduml
